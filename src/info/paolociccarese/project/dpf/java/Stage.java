@@ -59,6 +59,6 @@ public class Stage implements IStage {
 	
 	@Override
 	public void execute() {
-		_command.execute();
+		_command.run();
 	}
 }

@@ -11,5 +11,5 @@ public interface ICommand {
 	/**
 	 * Trigger the execution of the stage within the pipeline.
 	 */
-	public void execute();
+	public void run();
 }
