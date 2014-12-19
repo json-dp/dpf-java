@@ -1,5 +1,7 @@
 package info.paolociccarese.project.dpf.java;
 
+import java.util.Map;
+
 /**
  * A Stage is one component of the pipeline. It wraps the logic
  * to be executes so that you don't have to worry about the 
@@ -58,7 +60,7 @@ public class Stage implements IStage {
 	}
 	
 	@Override
-	public void execute() {
+	public void execute(Map<String, String> parameters) {
 		_command.run();
 	}
 }

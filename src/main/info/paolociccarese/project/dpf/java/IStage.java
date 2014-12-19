@@ -1,5 +1,7 @@
 package info.paolociccarese.project.dpf.java;
 
+import java.util.Map;
+
 /**
  * Interface exposing the main features for a pipeline stage.
  * 
@@ -30,6 +32,7 @@ public interface IStage {
 	
 	/**
 	 * Trigger the execution of the stage within the pipeline.
+	 * @param parameters List of parametrizations for the pipeline.
 	 */
-	public void execute();
+	public void execute(Map<String, String> parameters);
 }
