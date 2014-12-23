@@ -80,7 +80,7 @@ public class Stage implements IStage {
 	 * @param parameters List of parametrizations for the pipeline.
 	 */
 	@Override
-	public void execute(Map<String, String> parameters) {
-		_command.run(this, parameters);
+	public void execute(Map<String, String> parameters, Object data) {
+		_command.run(this, parameters, data);
 	}
 }

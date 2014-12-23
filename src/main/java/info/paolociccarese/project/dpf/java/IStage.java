@@ -40,5 +40,5 @@ public interface IStage {
 	 * Triggers the execution of the stage within the pipeline.
 	 * @param parameters List of parametrizations for the pipeline.
 	 */
-	public void execute(Map<String, String> parameters);
+	public void execute(Map<String, String> parameters, Object data);
 }
